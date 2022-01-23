@@ -1,0 +1,18 @@
+name = input("Enter name:")
+str = ""
+i = 0
+while i<len(name):
+    j = 0
+    k = 0
+    if name[i] in str:
+        i+=1
+    else:
+        while j<len(name):
+            if name[j] == name[i]:
+                k+=1
+                j+=1
+            else:
+                j+=1
+        print(f"{name[i]}:{k}")
+        str+=name[i]
+        i+=1
